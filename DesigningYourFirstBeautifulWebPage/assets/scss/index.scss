@@ -1,0 +1,100 @@
+// imports
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// fonts
+$fontPoppins: 'Poppins', serif;
+$fontRoboto: 'Roboto', serif;
+
+// colors
+$primaryColor: #227cff;
+$SecondaryColor: #fba229;
+$tertiaryColor: #2c363f;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+}
+
+section {
+  padding: 10px 140px;
+}
+
+.hero {
+  background-color: $primaryColor;
+  height: 600px;
+
+  nav {
+    font-family: $fontPoppins;
+
+    .container-fluid {
+      .brandName {
+        color: #fff;
+        font-size: 31px;
+        font-family: $fontPoppins;
+        font-weight: bold;
+
+        span {
+          font-weight: 300;
+        }
+      }
+      ul {
+        .nav-items {
+          font-size: 16px;
+          font-weight: 350;
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+
+          a {
+            opacity: 1;
+            transition: opacity 0.1s ease-in-out;
+          }
+
+          &:hover {
+            a {
+              opacity: 0.8;
+            }
+          }
+
+          &:last-child {
+            border-radius: 60px;
+            background-color: #ffffff46;
+          }
+        }
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  section {
+    padding: 10px 50px;
+  }
+}
+@media (max-width: 500px) {
+  section {
+    padding: 10px 0px;
+  }
+}
