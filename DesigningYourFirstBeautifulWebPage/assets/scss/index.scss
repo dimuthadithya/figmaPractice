@@ -29,7 +29,6 @@ ul {
 body {
   min-height: 100vh;
   display: grid;
-  background-color: $primaryColor;
 }
 
 section {
@@ -170,6 +169,30 @@ section {
 
     &:nth-child(2) {
       display: flex;
+    }
+  }
+}
+
+.team-chat {
+  .container-fluid {
+    h1 {
+      text-align: center;
+      font-size: $fontPoppins;
+      font-size: 45px;
+    }
+
+    p {
+      text-align: center;
+      margin: 0 auto;
+      font-family: $fontPoppins;
+      font-size: 19;
+    }
+    img {
+      max-height: 650px;
+      max-width: 992px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
     }
   }
 }
