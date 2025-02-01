@@ -29,6 +29,7 @@ ul {
 body {
   min-height: 100vh;
   display: grid;
+  background-color: $primaryColor;
 }
 
 section {
@@ -37,7 +38,6 @@ section {
 
 .hero {
   background-color: $primaryColor;
-  height: 600px;
 
   nav {
     font-family: $fontPoppins;
@@ -86,6 +86,120 @@ section {
       }
     }
   }
+
+  .content {
+    > div {
+      height: 600px;
+    }
+
+    > div:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    > div:nth-child(2) {
+      position: relative;
+      padding: 20px 0px 0px 30px;
+
+      .img-box {
+        z-index: 99;
+        display: flex;
+
+        &:nth-child(1) {
+          align-items: start;
+        }
+
+        &:nth-child(2) {
+          align-items: end;
+        }
+      }
+
+      img {
+        max-width: 300px;
+        max-height: 300px;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+      }
+
+      .reportImg {
+        bottom: 380px;
+        right: 60px;
+      }
+
+      .reportImg-2 {
+        bottom: 200px;
+        right: 650px;
+        zoom: 0.6;
+      }
+    }
+
+    .title {
+      font-size: 96px;
+      font-family: $fontPoppins;
+      line-height: 80px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-family: $fontRoboto;
+      opacity: 1;
+      font-size: larger;
+      padding: 0px 5px;
+    }
+
+    .btn-hero {
+      width: 208px;
+      height: 74px;
+      border-radius: 260px;
+      font-size: 25px;
+      font-family: $fontRoboto;
+
+      &:nth-child(1) {
+        background-color: #fff;
+        color: $primaryColor;
+        border: none;
+      }
+
+      &:nth-child(2) {
+        background-color: transparent;
+        border: 2px solid #fff;
+      }
+    }
+
+    &:nth-child(2) {
+      display: flex;
+    }
+  }
+}
+
+.box {
+  position: absolute;
+  z-index: -99;
+
+  > div {
+    display: flex;
+    margin: 0px 4px;
+
+    > div {
+      background-color: #fba229;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      margin: 4px;
+    }
+  }
+}
+
+.box-1 {
+  top: -20px;
+  left: -15px;
+}
+
+.box-2 {
+  top: 230px;
+  left: 140px;
 }
 
 @media (max-width: 700px) {
