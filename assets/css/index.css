@@ -176,6 +176,44 @@ section {
   font-family: "Roboto", serif;
 }
 
+.footer {
+  margin: 20px 0px 70px 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer > .container-fluid {
+  justify-content: space-around;
+}
+.footer > .container-fluid > div:nth-child(1) {
+  flex-grow: 2;
+}
+.footer > .container-fluid > div:nth-child(1) > h1 {
+  font-family: "Poppins", serif;
+  font-size: 45px;
+  color: #227cff;
+  font-weight: 600;
+}
+.footer > .container-fluid > div:nth-child(1) span {
+  color: #227cff;
+  opacity: 0.8;
+  font-weight: 300;
+}
+.footer > .container-fluid > div {
+  flex: 1;
+}
+.footer > .container-fluid ul > li:nth-child(1) {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.footer > .container-fluid ul > li:not(:nth-child(1)) {
+  cursor: pointer;
+  margin: 20px 0px;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+}
+
 .box {
   position: absolute;
   z-index: -99;

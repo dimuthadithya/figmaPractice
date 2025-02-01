@@ -228,6 +228,51 @@ section {
   }
 }
 
+.footer {
+  margin: 20px 0px 70px 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  > .container-fluid {
+    justify-content: space-around;
+
+    > div:nth-child(1) {
+      flex-grow: 2;
+
+      > h1 {
+        font-family: $fontPoppins;
+        font-size: 45px;
+        color: $primaryColor;
+        font-weight: 600;
+      }
+
+      span {
+        color: $primaryColor;
+        opacity: 0.8;
+        font-weight: 300;
+      }
+    }
+
+    > div {
+      flex: 1;
+    }
+
+    ul > li:nth-child(1) {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    ul > li:not(:nth-child(1)) {
+      cursor: pointer;
+      margin: 20px 0px;
+      font-family: $fontPoppins;
+      font-size: 16px;
+    }
+  }
+}
+
 .box {
   position: absolute;
   z-index: -99;
