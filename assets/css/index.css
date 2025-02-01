@@ -150,6 +150,32 @@ section {
   margin: 0 auto;
 }
 
+.business-solution {
+  min-height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a9bcbe;
+}
+.business-solution div:nth-child(1) img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.business-solution div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 30px;
+  font-family: "Poppins", serif;
+}
+.business-solution div:nth-child(2) .btn-hero {
+  width: 208px;
+  height: 74px;
+  border-radius: 260px;
+  font-size: 25px;
+  font-family: "Roboto", serif;
+}
+
 .box {
   position: absolute;
   z-index: -99;

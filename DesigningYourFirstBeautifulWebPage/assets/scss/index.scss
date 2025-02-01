@@ -197,6 +197,37 @@ section {
   }
 }
 
+.business-solution {
+  min-height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a9bcbe;
+
+  div:nth-child(1) {
+    img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 30px;
+    font-family: $fontPoppins;
+
+    .btn-hero {
+      width: 208px;
+      height: 74px;
+      border-radius: 260px;
+      font-size: 25px;
+      font-family: $fontRoboto;
+    }
+  }
+}
+
 .box {
   position: absolute;
   z-index: -99;
